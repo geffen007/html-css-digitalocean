@@ -11,9 +11,17 @@ h2 {
     font-size: 36px;
 }
 
+h3 {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+
+
 p {
     font-size: 24px;
     font-weight: 300;
+    margin-top: 20px;
 }
 
 
@@ -27,6 +35,15 @@ body {
 section {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+
+button {
+    border-color: #006aff;
+    color: #006aff;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 10px;
 }
 
 .bg-grey {
@@ -59,7 +76,7 @@ section {
 
 .bg-bluef {
     color: white;
-    background-color: #031b4e;
+    background-color: #010e28;
 }
 
 .gef_topbar {
@@ -145,22 +162,53 @@ section {
     background-color: #f3f5f9;
 }
 
+.gef_row_images {
+    margin-top: 32px;
+}
+
 .gef_grey-bar img {
     margin: 0 auto;
+}
+
+.gef_grey-bar .gef_row-a {
+    margin-top: 20px;
 }
 
 .gef_li-dep {
     padding: 15px;
     width: 100%;
-    border-left: 2px solid #e5e8ed;
+}
+
+.gef_border-menusm{
+    border-bottom: 2px solid #e5e8ed;
+    text-align: center;
 }
 
 .gef_dev {
 
 }
 
-.gef_tb-city {
+.gef_box-dev {
+    padding: 64px;
+}
+
+#rockerbox {
+    max-width: 200px;
+}
+
+.gef_built img {
+    margin-top: 40px;
+}
+
+
+.gef_tb-city  {
     border-bottom: 1.5px solid #354971;
+    padding: 13px;
+    font-size: 13px;
+}
+
+.get_tb-city .gef_cod {
+    font-size: 13px;
 }
 
 .gef_worl .last {
@@ -169,12 +217,20 @@ section {
 
 
 .gef_cod,
-.gef_city{
-    display: inline-block;
+.gef_city {
+    float:left;
+    padding-left: 10px;
+    margin: 0 0;
+
 }
 
 .gef_ts {
     float: right;
+}
+
+.gef_worl .gef_cod {
+    font-size: 13px;
+    font-weight: 700;
 }
 
 .gef_bar-cta {
@@ -203,12 +259,39 @@ footer {
     float: left;
 }
 
+.gef_col5 ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
 
+}
 
+.gef_col5 h5 {
+    margin-bottom: 25px;
+}
+
+.gef_col5 li {
+    color: #787e8c;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
 
 @media screen and (min-width: 992px) {
     .gef_nob-bot {
         border-bottom: 1px solid rgba(0, 0, 0, 0);
+    }
+
+    .gef_border-menusm{
+        border-bottom: 0px;
+        border-left: 3px solid #e5e8ed;
+    }
+
+    .gef_li-dep {
+        text-align: left;
     }
 
     .gef_col5 {
