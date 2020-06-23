@@ -1,0 +1,144 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.bg-grey {
+    background-color: #f3f5f9;
+    color: #031b4e;
+}
+
+.bg-white {
+    background-color: white;
+    color: #031b4e;
+}
+
+.bg-blue {
+    color: white;
+    background-color: #031b4e;
+    background-image: url("https://images.prismic.io/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg?auto=compress,format");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-lblue {
+    color: white;
+    background-color: #0065ff;
+    background-image: url("https://images.prismic.io/www-static/b4ba92a9-0956-484b-9a3f-68ef4d550fd4_bg-home-cta.svg?auto=compress,format");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.bg-bluef {
+    color: white;
+    background-color: #031b4e;
+}
+
+.gef_topbar {
+    height: 40px;
+    border-bottom: 1px solid #e1e4ea;
+}
+
+.gef_nav {
+    height: 66px;
+}
+
+.gef_logo {
+    width: 214px;
+    padding: 15px 12px 8px 20px;
+    float:left;
+}
+.gef_logo img {
+    height: 28px;
+}
+
+.gef_navbar {
+    float: left;
+    width: calc(100% - 214px);
+    padding-top: 3px;
+}
+
+.gef_sign {
+    padding: 17px 16px 20px 16px;
+    float: right;
+}
+
+.gef-ham {
+    height: 52px;
+    width: 52px;
+    padding: 17px 16px 20px 16px;
+    float: right;
+}
+
+.gef_lineham {
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    margin: 3px auto;
+}
+
+.gef_banner {
+    background: url("https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.gef_grey-bar {
+    background-color: #f3f5f9;
+}
+
+.gef_grey-bar img {
+    margin: 0 auto;
+}
+
+.gef_li-dep {
+    padding: 15px;
+    width: 100%;
+    border-left: 2px solid #e5e8ed;
+}
+
+.gef_dev {
+
+}
+
+.gef_tb-city {
+    border-bottom: 1.5px solid #354971;
+}
+
+.gef_cod,
+.gef_city{
+    display: inline-block;
+}
+
+.gef_ts {
+    float: right;
+}
+
+.gef_bar-cta {
+    padding: 64px;
+}
+
+.gef_bar-cta h2 {
+
+}
+
+.gef_bar-cta .col-sm-6 button {
+    float: right;
+}
+
+
+footer {
+    padding-top: 64px;
+
+}
