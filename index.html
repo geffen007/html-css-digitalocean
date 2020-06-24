@@ -20,8 +20,25 @@
                     </div>
                     <div class="gef_navbar">
                         <div class="gef_menu hidden-xs hidden-sm">
+                            <div class="gef_menu-item">
+                                <span>Products</span>
+                            </div>
+                            <div class="gef_menu-item">
+                                <span>Marketplace</span>
+                            </div>
+                            <div class="gef_menu-item">
+                                <span>Customers</span>
+                            </div>
+                            <div class="gef_menu-item">
+                                <span>Partners</span>
+                            </div>
+                            <div class="gef_menu-item">
+                                <span>Community</span>
+                            </div>
 
-
+                            <div class="gef_menu-item">
+                                <span>Pricing</span>
+                            </div>
                         </div>
 
                         <div class="gef_sign hidden-xs hidden-sm">
@@ -43,7 +60,7 @@
         <section class="gef_banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8" id="gef_banner-left">
+                    <div class="col-md-8" >
                         <div class="gef_h1">
                             <h1>Welcome to the developer cloud</h1>
                             <p>We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
@@ -64,12 +81,16 @@
                               <div class="form-group">
                                 <input type="password" class="form-control" id="Passwordform" placeholder="Password">
                               </div>
-                              <button type="submit" class="btn btn-default">Sign up with email</button>
-                            </form>
+                              <button type="submit" id="swebutton">Sign up with Email</button>                           </form>
                         </div>
                         <div class="gef_fot-jumbo text-center">
-                            <button type="button" name="button"></button>
-                            <button type="button" name="button"></button>
+                            <button type="button" id="buttonjumbo1">
+                                <i class="fab fa-google"></i>
+                                Sign up with Google
+                            </button>
+                            <button type="button" id="buttonjumbo2">
+                                <i class="fab fa-github"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -107,7 +128,7 @@
                         <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row gef_minisite">
                     <div class="col-md-3 col-xs-12">
                         <div class="col-md-12 col-xs-2 col-xs-offset-1 col-md-offset-0 gef_border-menusm">
                             <div class="gef_li-dep">
@@ -136,18 +157,32 @@
                         </div>
 
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9 text-center gef_minisite-view">
                         <div class="col-md-6">
-
+                            <img src="https://images.prismic.io/www-static/16ae92b4-6939-446c-b6a3-0ffec01cdc14_kublogoicon.svg?auto=compress,format" alt="">
+                            <h3>Kubernetes in minutes</h3>
+                            <p>Spin up a managed Kubernetes cluster in just a few clicks. Simply specify the size and location of your worker nodes.</p>
                         </div>
                         <div class="col-md-6">
-
+                            <img src="https://images.prismic.io/www-static/9d343e9c-fe74-4979-8ad9-e8efc58d6ee7_dropletinboxicon.svg?auto=compress,format" alt="">
+                            <h3>Flexible compute types</h3>
+                            <p>With Standard, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://images.prismic.io/www-static/936bb585-99ba-460d-ae2f-7bbdae8896cc_stacksplusicon.svg?auto=compress,format" alt="">
+                            <h3>1-Click App Marketplace</h3>
+                            <p>Quickly deploy projects using one of our preconfigured 1-Click Apps, like LAMP, Docker, and WordPress.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://images.prismic.io/www-static/0eee6655-dfce-46b2-ab48-f40ff27d8a73_globeicon.svg?auto=compress,format" alt="">
+                            <h3>Global availability</h3>
+                            <p>Deploy to any of our data center locations – New York, SF, London, Amsterdam, Bangalore, and more.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="gef_dev bg-grey">
+        <section class="gef_devf bg-grey">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
@@ -156,11 +191,19 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-2 hidden-xs hidden-sm"></div>
+                    <div class="col-md-2 hidden-xs hidden-sm">
+                        <div class="gef_arrow">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                    </div>
                     <div class="col-md-8">
                         <img class="img-responsive" src="https://images.prismic.io/www-static/ba01040c-a47a-43c9-995d-4ed05a5dc4c9_screenshot-create-kubernetes-cluster-4a930955.jpg?auto=compress,format" alt="">
                     </div>
-                    <div class="col-md-2 hidden-xs hidden-sm"></div>
+                    <div class="col-md-2 hidden-xs hidden-sm">
+                        <div class="gef_arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -207,99 +250,178 @@
                         <p>Run your infrastructure near your customers. Industry-low bandwidth pricing, with generous quotas and add-on transfer at just $.01/GiB, makes DigitalOcean perfect for network-heavy apps like VPN and video.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="gef_tb-city clearfix">
-                        <span class="gef_cod">AMS2</span>
-                        <span class="gef_city">Amsterdam, Netherlands</span>
-                        <a class="gef_ts" href="#">Test Speed</a>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="gef_tb-city">
+                            <div class="col-xs-2">
+                                <span class="gef_cod">AMS2</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="gef_city">Amsterdam, Netherlands</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="gef_ts" href="#">Test Speed</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="gef_tb-city clearfix">
-                        <span class="gef_cod">AMS2</span>
-                        <span class="gef_city">Amsterdam, Netherlands</span>
-                        <a class="gef_ts" href="#">Test Speed</a>
+                    <div class="col-md-6">
+                        <div class="gef_tb-city">
+                            <div class="col-xs-2">
+                                <span class="gef_cod">AMS3</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="gef_city">Amsterdam, Netherlands</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="gef_ts" href="#">Test Speed</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="gef_tb-city clearfix">
-                        <span class="gef_cod">AMS2</span>
-                        <span class="gef_city">Amsterdam, Netherlands</span>
-                        <a class="gef_ts" href="#">Test Speed</a>
+                    <div class="col-md-6">
+                        <div class="gef_tb-city">
+                            <div class="col-xs-2">
+                                <span class="gef_cod">blr1</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="gef_city">Bangalore, India</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="gef_ts" href="#">Test Speed</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="gef_tb-city clearfix">
-                        <span class="gef_cod">AMS2</span>
-                        <span class="gef_city">Amsterdam, Netherlands</span>
-                        <a class="gef_ts" href="#">Test Speed</a>
+                    <div class="col-md-6">
+                        <div class="gef_tb-city">
+                            <div class="col-xs-2">
+                                <span class="gef_cod">fra1</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="gef_city">Frankfurt, Germany</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="gef_ts" href="#">Test Speed</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="gef_tb-city clearfix">
-                        <span class="gef_cod">AMS2</span>
-                        <span class="gef_city">Amsterdam, Netherlands</span>
-                        <a class="gef_ts" href="#">Test Speed</a>
+                    <div class="col-md-6">
+                        <div class="gef_tb-city">
+                            <div class="col-xs-2">
+                                <span class="gef_cod">LON1</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="gef_city">London, UK</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="gef_ts" href="#">Test Speed</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="gef_tb-city clearfix">
-                        <span class="gef_cod">AMS2</span>
-                        <span class="gef_city">Amsterdam, Netherlands</span>
-                        <a class="gef_ts" href="#">Test Speed</a>
+                    <div class="col-md-6">
+                        <div class="gef_tb-city">
+                            <div class="col-xs-2">
+                                <span class="gef_cod">NYC1</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="gef_city">New York, NY</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="gef_ts" href="#">Test Speed</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="gef_tb-city clearfix">
-                        <span class="gef_cod">AMS2</span>
-                        <span class="gef_city">Amsterdam, Netherlands</span>
-                        <a class="gef_ts" href="#">Test Speed</a>
+                    <div class="col-md-6">
+                        <div class="gef_tb-city">
+                            <div class="col-xs-2">
+                                <span class="gef_cod">NYC2</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="gef_city">New York, NY</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="gef_ts" href="#">Test Speed</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="gef_tb-city clearfix"">
-                        <span class="gef_cod">AMS2</span>
-                        <span class="gef_city">Amsterdam, Netherlands</span>
-                        <a class="gef_ts" href="#">Test Speed</a>
+                    <div class="col-md-6">
+                        <div class="gef_tb-city">
+                            <div class="col-xs-2">
+                                <span class="gef_cod">NYC3</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="gef_city">New York, NY</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="gef_ts" href="#">Test Speed</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="gef_tb-city clearfix">
-                        <span class="gef_cod">AMS2</span>
-                        <span class="gef_city">Amsterdam, Netherlands</span>
-                        <a class="gef_ts" href="#">Test Speed</a>
+                    <div class="col-md-6">
+                        <div class="gef_tb-city">
+                            <div class="col-xs-2">
+                                <span class="gef_cod">sf01</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="gef_city">San Francisco, CA</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="gef_ts" href="#">Test Speed</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="gef_tb-city clearfix">
-                        <span class="gef_cod">AMS2</span>
-                        <span class="gef_city">Amsterdam, Netherlands</span>
-                        <a class="gef_ts" href="#">Test Speed</a>
+                    <div class="col-md-6">
+                        <div class="gef_tb-city">
+                            <div class="col-xs-2">
+                                <span class="gef_cod">sf02</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="gef_city">San Francisco, CA</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="gef_ts" href="#">Test Speed</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="gef_tb-city clearfix">
-                        <span class="gef_cod">AMS2</span>
-                        <span class="gef_city">Amsterdam, Netherlands</span>
-                        <a class="gef_ts" href="#">Test Speed</a>
+                    <div class="col-md-6">
+                        <div class="gef_tb-city">
+                            <div class="col-xs-2">
+                                <span class="gef_cod">sf03</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="gef_city">San Francisco, CA</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="gef_ts" href="#">Test Speed</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="gef_tb-city gef_nob-bot clearfix">
-                        <span class="gef_cod">AMS2</span>
-                        <span class="gef_city">Amsterdam, Netherlands</span>
-                        <a class="gef_ts" href="#">Test Speed</a>
+                    <div class="col-md-6">
+                        <div class="gef_tb-city gef_nob-bot ">
+                            <div class="col-xs-2">
+                                <span class="gef_cod">SGP1</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="gef_city">Singapore</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="gef_ts" href="#">Test Speed</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="gef_tb-city clearfix gef_nob-bot">
-                        <span class="gef_cod">AMS2</span>
-                        <span class="gef_city">Amsterdam, Netherlands</span>
-                        <a class="gef_ts" href="#">Test Speed</a>
+                    <div class="col-md-6">
+                        <div class="gef_tb-city gef_nob-bott">
+                            <div class="col-xs-2">
+                                <span class="gef_cod">tor1</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="gef_city">Toronto, Canada/span>
+                            </div>
+                            <div class="col-xs-3">
+                                <a class="gef_ts" href="#">Test Speed</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="gef_dev bg-grey">
             <div class="container">
@@ -312,33 +434,33 @@
 
 
                 <div class="row">
-                    <div class="col-md-1 hidden-xs hidden-sm"></div>
+                    <div class="col-md-1 hidden-xs hidden-sm">
+                        <div class="gef_arrow2">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                    </div>
                     <div class="col-md-10 bg-white text-center gef_box-dev">
                         <img id="rockerbox" src="https://images.prismic.io/www-static/16673e66-0c2f-417b-88bb-f02cc12b8fda_rockerbox-logo-51462da2.png?auto=compress,format" alt="">
                         <p class="gef_cit">We have been able to make scaling the technical infrastructure of our business cost effective and efficient.</p>
                         <p class="gef_cit-aut">Rick O’Toole</p>
                         <p class="gef_role">Co-founder and CTO</p>
                     </div>
-                    <div class="col-md-1 hidden-xs hidden-sm"></div>
+                    <div class="col-md-1 hidden-xs hidden-sm">
+                        <div class="gef_arrow2">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <div class="gef_bar-cta bg-lblue">
-            <div class="container">
-                <div class="row hidden-xs">
-                    <div class="col-sm-6">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-sm-6 text-center">
                         <h2>Get started Now</h2>
                     </div>
-                    <div class="col-sm-6">
-                        <button type="button" name="button">Create your account</button>
-                    </div>
-                </div>
-                <div class="row text-center hidden-sm hidden-md hidden-lg">
-                    <div class="col-xs-12">
-                        <h2>Get started Now</h2>
-                    </div>
-                    <div class="col-xs-12">
-                        <button type="button" name="button">Create your account</button>
+                    <div class="col-sm-6 text-center">
+                        <button type="button" id="gef_cya">Create your account</button>
                     </div>
                 </div>
             </div>
@@ -346,93 +468,96 @@
         <footer class="bg-bluef">
             <div class="container">
                 <div class="gef_li-footer">
-                    <div class="gef_col5">
-                        <ul>
-                            <h5>Company</h5>
-                            <li>About</li>
-                            <li>Leadership</li>
-                            <li>Blog</li>
-                            <li>Careers</li>
-                            <li>Partners</li>
-                            <li>Referral Program</li>
-                            <li>Press</li>
-                            <li>Legal</li>
-                            <li>Trust Platform</li>
-                        </ul>
-                    </div>
-                    <div class="gef_col5">
-                        <ul>
-                            <h5>Products</h5>
-                            <li>Products Overview</li>
-                            <li>Droplets</li>
-                            <li>Kubernetes</li>
-                            <li>Managed Databases</li>
-                            <li>Spaces</li>
-                            <li>Marketplace</li>
-                            <li>Load Balancers</li>
-                            <li>Block Storage</li>
-                            <li>Tools & Integrations</li>
-                            <li>API</li>
-                            <li>Pricing</li>
-                            <li>Documentation</li>
-                            <li>Release Notes</li>
-                        </ul>
-                    </div>
-                    <div class="gef_col5">
-                        <ul>
-                            <h5>Products</h5>
-                            <li>Products Overview</li>
-                            <li>Droplets</li>
-                            <li>Kubernetes</li>
-                            <li>Managed Databases</li>
-                            <li>Spaces</li>
-                            <li>Marketplace</li>
-                            <li>Load Balancers</li>
-                            <li>Block Storage</li>
-                            <li>Tools & Integrations</li>
-                            <li>API</li>
-                            <li>Pricing</li>
-                            <li>Documentation</li>
-                            <li>Release Notes</li>
-                        </ul>
-                    </div>
-                    <div class="gef_col5">
-                        <ul>
-                            <h5>Products</h5>
-                            <li>Products Overview</li>
-                            <li>Droplets</li>
-                            <li>Kubernetes</li>
-                            <li>Managed Databases</li>
-                            <li>Spaces</li>
-                            <li>Marketplace</li>
-                            <li>Load Balancers</li>
-                            <li>Block Storage</li>
-                            <li>Tools & Integrations</li>
-                            <li>API</li>
-                            <li>Pricing</li>
-                            <li>Documentation</li>
-                            <li>Release Notes</li>
-                        </ul>
-                    </div>
-                    <div class="gef_col5">
-                        <ul>
-                            <h5>Products</h5>
-                            <li>Products Overview</li>
-                            <li>Droplets</li>
-                            <li>Kubernetes</li>
-                            <li>Managed Databases</li>
-                            <li>Spaces</li>
-                            <li>Marketplace</li>
-                            <li>Load Balancers</li>
-                            <li>Block Storage</li>
-                            <li>Tools & Integrations</li>
-                            <li>API</li>
-                            <li>Pricing</li>
-                            <li>Documentation</li>
-                            <li>Release Notes</li>
-                        </ul>
+                    <div class="row gef_rw">
+                        <div class="gef_col5">
+                            <ul>
+                                <h5>Company</h5>
+                                <li>About</li>
+                                <li>Leadership</li>
+                                <li>Blog</li>
+                                <li>Careers</li>
+                                <li>Partners</li>
+                                <li>Referral Program</li>
+                                <li>Press</li>
+                                <li>Legal</li>
+                                <li>Trust Platform</li>
+                            </ul>
+                        </div>
+                        <div class="gef_col5">
+                            <ul>
+                                <h5>Products</h5>
+                                <li>Products Overview</li>
+                                <li>Droplets</li>
+                                <li>Kubernetes</li>
+                                <li>Managed Databases</li>
+                                <li>Spaces</li>
+                                <li>Marketplace</li>
+                                <li>Load Balancers</li>
+                                <li>Block Storage</li>
+                                <li>Tools & Integrations</li>
+                                <li>API</li>
+                                <li>Pricing</li>
+                                <li>Documentation</li>
+                                <li>Release Notes</li>
+                            </ul>
+                        </div>
+                        <div class="gef_col5">
+                            <ul>
+                                <h5>Community</h5>
+                                <li>Tutorials
+                                <li>Meetups</li>
+                                <li>Q&A</li>
+                                <li>Write for DOnations</li>
+                                <li>Droplets for Demos</li>
+                                <li>Hatch Startup Program</li>
+                                <li>Shop Swag</li>
+                                <li>Research Program</li>
+                                <li>Currents Research</li>
+                                <li>Open Source</li>
+                            </ul>
+                        </div>
+                        <div class="gef_col5">
+                            <ul>
+                                <h5>Solutions</h5>
+                                <li>Web & Mobile Apps</li>
+                                <li>Website Hosting</li>
+                                <li>Big Data</li>
+                                <li>Managed Services</li>
+                                <li>Business Solutions</li>
+
+                            </ul>
+                        </div>
+                        <div class="gef_col5">
+                            <ul>
+                                <h5>Contacts</h5>
+                                <li>Support</li>
+                                <li>Sales</li>
+                                <li>Report Abuse</li>
+                                <li>System Status</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="row gef_ffoo text-center">
+                    <div class="col-md-6 col-xs-12">
+                        <img src="https://images.prismic.io/www-static%2F903fd83b-8963-42c2-baf6-44f4d6bb83f2_digitalocean-logo-mark.svg?auto=compress,format" alt="">
+                        <span>© 2020 DigitalOcean, LLC. All rights reserved.</span>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="gef_social-icon">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-dev"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
         </footer>
     </body>

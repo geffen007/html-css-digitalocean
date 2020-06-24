@@ -5,6 +5,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 55px;
+
 }
 
 h2 {
@@ -24,6 +25,17 @@ p {
     margin-top: 20px;
 }
 
+a {
+    color: #0069ff;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+a::after {
+    content: ' >';
+    font-weight: 600;
+}
 
 body {
     font-family: 'Archivo Black', sans-serif;
@@ -39,11 +51,40 @@ section {
 
 
 button {
-    border-color: #006aff;
+    border: 2px solid #006aff;
     color: #006aff;
     background-color: white;
     font-weight: 600;
-    border-radius: 10px;
+    border-radius: 5px;
+}
+
+#swebutton {
+    width: 100%;
+    color: white;
+    background-color: #006aff;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#buttonjumbo1 {
+    width: calc(100% - 57px);
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#buttonjumbo2 {
+    width:100%;
+    max-width: 53px;
+    padding: 16px 16px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#gef_cya {
+    padding: 16px 16px;
+    border: 0px;
 }
 
 .bg-grey {
@@ -103,6 +144,13 @@ button {
     padding-top: 3px;
 }
 
+.gef_navbar .gef_menu-item {
+    float: left;
+    font-size: 16px;
+    padding: 16px;
+    font-weight: 500;
+}
+
 .gef_sign {
     padding: 17px 16px 20px 16px;
     float: right;
@@ -133,7 +181,7 @@ button {
 
 
 .gef_h1 {
-    padding: 60px 0;
+    padding: 90px 0;
 }
 
 .gef_banner .gef_hat-jumbo {
@@ -155,7 +203,11 @@ button {
     border-top: 1px solid #f3f5f9;
     background-color: white;
     border-radius: 0 0 10px 10px ;
-    padding: 16px;
+    padding: 32px;
+}
+
+.gef_fot-jumbo i {
+    font-size: 18px;
 }
 
 .gef_grey-bar {
@@ -174,9 +226,17 @@ button {
     margin-top: 20px;
 }
 
+.gef_minisite {
+    color: #817795;
+}
+
 .gef_li-dep {
     padding: 15px;
     width: 100%;
+}
+
+.gef_li-dep span{
+    text-transform: capitalize;
 }
 
 .gef_border-menusm{
@@ -184,41 +244,56 @@ button {
     text-align: center;
 }
 
-.gef_dev {
-
+.gef_minisite-view img {
+    margin-top: 20px;
 }
 
-.gef_box-dev {
-    padding: 64px;
+.gef_minisite-view h3 {
+    color: #031b4e;
 }
 
-#rockerbox {
-    max-width: 200px;
+.gef_minisite-view p {
+    font-size: 14px;
 }
 
 .gef_built img {
     margin-top: 40px;
 }
 
+.gef_arrow {
+    padding: 234px 76px;
+}
+
+
+
+.gef_box-dev {
+    padding: 64px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 3px lightgrey;
+}
+
+#rockerbox {
+    max-width: 200px;
+}
+
+.gef_arrow2 {
+    padding: 172px 27px;
+}
 
 .gef_tb-city  {
     border-bottom: 1.5px solid #354971;
-    padding: 13px;
+    padding-top: 13px;
+    padding-bottom: 32px;
     font-size: 13px;
 }
 
-.get_tb-city .gef_cod {
+.gef_cod {
     font-size: 13px;
+    text-transform: uppercase;
 }
-
-.gef_worl .last {
-    border-bottom: 0px;
-}
-
 
 .gef_cod,
 .gef_city {
-    float:left;
     padding-left: 10px;
     margin: 0 0;
 
@@ -226,6 +301,12 @@ button {
 
 .gef_ts {
     float: right;
+    font-size: 13px;
+    color: #01c5d2;
+}
+
+.gef_nob-bott {
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
 .gef_worl .gef_cod {
@@ -238,16 +319,12 @@ button {
 }
 
 .gef_bar-cta h2 {
-
+    padding-bottom: 40px;
 }
-
-.gef_bar-cta .col-sm-6 button {
-    float: right;
-}
-
 
 footer {
     padding-top: 64px;
+    padding-bottom: 48px;
 }
 
 .gef_li-footer {
@@ -280,9 +357,36 @@ footer {
     font-weight: 300;
 }
 
+
+
+.gef_ffoo {
+    padding-top: 48px;
+    border-top: 1px solid #787e8c;
+}
+
+.gef_ffoo span {
+    padding-left: 20px;
+    color: #7f8693;
+}
+
+.gef_rw {
+    margin-left: 0;
+}
+
+.gef_social-icon {
+    font-size: 20px;
+    padding: 14px 0 14px 0;
+}
+
+.gef_social-icon .fab {
+    padding-left: 9px;
+    padding-right: 9px;
+    color: #7f8693;
+}
+
 @media screen and (min-width: 992px) {
     .gef_nob-bot {
-        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        border-bottom: 1.5px solid rgba(0, 0, 0, 0);
     }
 
     .gef_border-menusm{
@@ -298,4 +402,28 @@ footer {
         width: 20%;
     }
 
+    .gef_ffoo {
+        text-align: left;
+    }
+
+    .gef_social-icon {
+        float: right;
+    }
+
+    .gef_minisite-view {
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .gef_bar-cta h2  {
+        float: left;
+        padding-bottom: 0;
+        padding-top: 6px;
+
+    }
+    .gef_bar-cta button  {
+        float: right;
+    }
 }
