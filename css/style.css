@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 65px;
 
 }
 
@@ -178,6 +178,11 @@ button {
     font-weight: 500;
 }
 
+.gef_dropdown span::after{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f078";
+    padding-left: 5px;
+}
+
 .gef_sign {
     padding: 11px 0px;
     float: right;
@@ -235,6 +240,11 @@ button {
 
 .gef_fot-jumbo i {
     font-size: 18px;
+}
+
+.gef_banner .span  {
+    display: block;
+    padding-top: 10px;
 }
 
 .gef_grey-bar {
