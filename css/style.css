@@ -32,6 +32,11 @@ a {
     text-transform: capitalize;
 }
 
+a:hover {
+    color: #1633ff;
+    text-decoration-line: none;
+}
+
 a::after {
     content: ' >';
     font-weight: 600;
@@ -51,11 +56,15 @@ section {
 
 
 button {
-    border: 2px solid #006aff;
+    border: 1px solid #006aff;
     color: #006aff;
     background-color: white;
     font-weight: 600;
     border-radius: 5px;
+}
+
+#gef_btn-sign {
+    padding: 6px;
 }
 
 #swebutton {
@@ -74,6 +83,10 @@ button {
     font-weight: 600;
 }
 
+#buttonjumbo1:hover span{
+    color: black;
+}
+
 #buttonjumbo2 {
     width:100%;
     max-width: 53px;
@@ -83,8 +96,22 @@ button {
 }
 
 #gef_cya {
+    font-size: 16px;
     padding: 16px 16px;
     border: 0px;
+}
+
+#gef_cya:hover {
+    background-color: #cbd4e4;
+}
+
+.gef_form input {
+    height: 48px;
+    width: 100%;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    font-size: 15px;
 }
 
 .bg-grey {
@@ -152,7 +179,7 @@ button {
 }
 
 .gef_sign {
-    padding: 17px 16px 20px 16px;
+    padding: 11px 0px;
     float: right;
 }
 
@@ -260,11 +287,13 @@ button {
     margin-top: 40px;
 }
 
+.gef_built .row p {
+    font-size: 18px;
+}
+
 .gef_arrow {
     padding: 234px 76px;
 }
-
-
 
 .gef_box-dev {
     padding: 64px;
@@ -274,6 +303,23 @@ button {
 
 #rockerbox {
     max-width: 200px;
+}
+
+.gef_box-dev .fas {
+    font-size: 11px;
+}
+
+#fql {
+    vertical-align: super;
+}
+
+.gef_box-dev span {
+    display: block;
+    padding-top: 10px;
+}
+
+.gef_box-dev .gef_cit-aut {
+    font-size: 22px;
 }
 
 .gef_arrow2 {
@@ -318,8 +364,8 @@ button {
     padding: 64px;
 }
 
-.gef_bar-cta h2 {
-    padding-bottom: 40px;
+.gef_bar-cta .col-sm-6 h2 {
+    padding-top: 8px;
 }
 
 footer {
@@ -382,6 +428,14 @@ footer {
     padding-left: 9px;
     padding-right: 9px;
     color: #7f8693;
+}
+
+footer li:hover {
+    color: white;
+}
+
+footer .gef_social-icon i:hover {
+    color: white;
 }
 
 @media screen and (min-width: 992px) {
