@@ -154,6 +154,12 @@ button {
 
 .gef_nav {
     height: 66px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    z-index: 9999;
 }
 
 .gef_logo {
@@ -213,7 +219,8 @@ button {
 
 
 .gef_h1 {
-    padding: 90px 0;
+    padding: 0 0 40px 0;
+    text-align: center;
 }
 
 .gef_banner .gef_hat-jumbo {
@@ -317,6 +324,10 @@ button {
 
 .gef_box-dev .fas {
     font-size: 11px;
+}
+
+.gef_dev .gef_box-dev i {
+    color: grey;
 }
 
 #fql {
@@ -449,6 +460,11 @@ footer .gef_social-icon i:hover {
 }
 
 @media screen and (min-width: 992px) {
+    .gef_h1 {
+        padding: 90px 0 40px 0;
+        text-align: left;
+    }
+
     .gef_nob-bot {
         border-bottom: 1.5px solid rgba(0, 0, 0, 0);
     }
